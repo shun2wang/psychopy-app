@@ -16,6 +16,23 @@ const { uv } = require("./uv.js");
 const logging = require("./logging.js");
 const { appVersion, isDev } = require('./version.js');
 
+const i18n = require("./i18n.js")
+
+/**
+ * create a new instance
+ */
+// const i18n = new I18n()
+
+// /**
+//  * later in code configure
+//  */
+// i18n.configure({
+//   locales: ['en', 'de'],
+//   directory: path.join(__dirname, '/locales')
+// })
+
+
+
 VelopackApp.build().run();
 
 // figure out best file to use for a favicon

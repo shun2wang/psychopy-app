@@ -31,6 +31,10 @@
     import { UserCtrl, ProjectCtrl } from '$lib/pavlovia/pavlovia.svelte';
     import MonitorCenterDlg from '../../../lib/dialogs/monitorCenter/MonitorCenterDlg.svelte';
 
+
+    console.log(window)
+    const _ = $state(() => window.i18n._);
+
     let current = getContext("current");
 
     let show = $state({
@@ -92,7 +96,7 @@
         />  
         <IconButton 
             icon="/icons/btn-open.svg" 
-            label="Open file" 
+            label={_("Open file")} 
             onclick={(evt) => prompts.OPEN = true} 
             borderless
         />

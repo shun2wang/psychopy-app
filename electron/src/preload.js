@@ -1,5 +1,6 @@
 const { ipcRenderer, contextBridge } = require('electron');
 
+// const i18n = require('i18n');
 
 // details about Electron process
 const electron = {

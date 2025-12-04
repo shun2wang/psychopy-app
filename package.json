@@ -54,7 +54,6 @@
 		"dev": "concurrently \"npm run svelte:dev\" \"wait-on http://localhost:5173 && npm run electron:start\""
 	},
 	"devDependencies": {
-		"electron-builder": "*",
 		"@electron/fuses": "^1.8.0",
 		"@fontsource/fira-mono": "^5.0.0",
 		"@neoconfetti/svelte": "^2.0.0",
@@ -63,6 +62,7 @@
 		"@sveltejs/kit": "^2.16.0",
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
 		"electron": "38.0.0",
+		"electron-builder": "*",
 		"svelte": "^5.0.0",
 		"svelte-check": "^4.0.0",
 		"typescript": "^5.0.0",
@@ -72,6 +72,7 @@
 		"@monaco-editor/loader": "^1.5.0",
 		"express": "^5.1.0",
 		"extract-zip": "2.0.1",
+		"i18n": "^0.15.3",
 		"json-schema-default": "^1.0.2",
 		"jsonschema": "^1.5.0",
 		"marked": "^16.3.0",
@@ -83,8 +84,12 @@
 	},
 	"optionalDependencies": {
 		"@rollup/rollup-linux-x64-gnu": "*",
-		"electron-maker-velopack": "^1.0.4",
-		"dmg-builder": "^0.5.1"
+		"dmg-builder": "^0.5.1",
+		"electron-maker-velopack": "^1.0.4"
 	},
-	"os": ["darwin", "linux", "win32"]
+	"os": [
+		"darwin",
+		"linux",
+		"win32"
+	]
 }

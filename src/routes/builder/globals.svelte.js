@@ -1,5 +1,6 @@
 import { Experiment, Script } from "$lib/experiment";
 import { Clipboard } from "$lib/utils/clipboard";
+import i18n from "i18n";
 
 
 export let current = $state({
@@ -14,5 +15,6 @@ export let current = $state({
     routine: undefined,
     moving: undefined,
     inserting: undefined,
-    clipboard: new Clipboard()
+    clipboard: new Clipboard(),
+    i18n: i18n
 })

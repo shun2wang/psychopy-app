@@ -8,6 +8,8 @@
     import HsvColor from "./HsvColor.svelte";
     import LmsColor from "./LmsColor.svelte";
 
+    const _ = window.i18n._;
+
     let {
         value=$bindable(),
         space=$bindable(),
@@ -30,7 +32,7 @@
 
 <Dialog
     id=color-picker
-    title="Color Picker"
+    title={_("Color Picker")}
     onopen={evt => restore = {
         color: $state.snapshot(value),
         space: $state.snapshot(space)
